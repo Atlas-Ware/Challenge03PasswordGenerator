@@ -15,7 +15,7 @@ generateBtn.addEventListener("click", writePassword);
 
 // Password Prompt Functions
 // Upper Characters Function
-function upperCase() {
+function upperCase(length) {
   generateBtn
   let person = prompt("Will the password contain uppercase characters?");
   var result = '';
@@ -29,7 +29,7 @@ function upperCase() {
     console.log(upperCase);
 
 // Lowercase Characters Function
-function lowerCase() {
+function lowerCase(length) {
   let person = prompt("Will the password contain lowercase characters?");
   var result = '';
   var characters ='abcdefghijklmnopqrstuvwxyz';
@@ -41,7 +41,7 @@ function lowerCase() {
     } console.log(lowerCase);
 
 // Numeric Characters Function
-function numberChars() {
+function numberChars(length) {
   let person = prompt("Will the password contain numeric characters?");
   var result = '';
   var characters ='0123456789';
@@ -53,7 +53,7 @@ function numberChars() {
     } console.log(numberChars);
 
 // Special Characters Function
-function specialChars() {
+function specialChars(length) {
   let person = prompt("Will the password contain special characters?");
   var result = '';
   var characters ='!@#$%&*?+=';
@@ -75,11 +75,11 @@ function howManyChars() {
 
 //Master Function
 function generatePassword() {
-  var uCharacters = upperCase();
-  var lCharacters = lowerCase();
-  var nCharacters = numberChars();
-  var sCharacters = specialChars();
-  var characterSet = howManyChars();
+  let uCharacters = upperCase(length);
+  let lCharacters = lowerCase(length);
+  let nCharacters = numberChars(length);
+  let sCharacters = specialChars(length);
+  let characterSet = howManyChars(length);
     if (uCharacters == null) {
       alert("This needs a value");
     } else (characterSet += uCharacters)
