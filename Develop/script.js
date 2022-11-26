@@ -36,7 +36,6 @@ function generatePassword() {
       alert("This needs a value");
       return generatePassword();
   } else if (amountChars < 8 || amountChars > 128) {
-      amountChars = parseInt(prompt("You must choose between 8 and 128"));
       return generatePassword();
   } else {
       // Continues once user input is validated
