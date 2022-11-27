@@ -1,4 +1,4 @@
-# Albistu Password Generateor
+# Albistu Password Generator
 
 ## Description
 This password generator uses basic HTML & CSS code to create a basic password generator appearance. Javascript provides the bulk of the code for the password generation. This WebApp generates a password from 8 to 128 characters, using: numbers, special, lowercase & uppercase characters.
